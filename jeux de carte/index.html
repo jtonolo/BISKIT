@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Jeux de cartes</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+</head>
+
+
+<body>
+    <div id="preloader">
+        <div id="pre">
+            <h1>BISKIT</h1>
+            <p>Veillez a ce que tous les verres soient remplis avant de commencer la partie ! L'abus d'alcool est
+                dangereux pour la santé ;)</p>
+            <form id="myform">
+                <label>Joueur 1 : </label>
+                <input type="text" id="p1" name="play1" required><br>
+                <label>Joueur 2 : </label>
+                <input type="text" id="p2" name="play2" required><br>
+                <label>Joueur 3 : </label>
+                <input type="text" id="p3" name="play3"><br>
+                <label>Joueur 4 : </label>
+                <input type="text" id="p4" name="play4"><br>
+                <label>Joueur 5 : </label>
+                <input type="text" id="p5" name="play5"><br>
+                <label>Joueur 6 : </label>
+                <input type="text" id="p6" name="play5"><br>
+                <a onclick="verif_submit ()"> <input type="button" id="sub" onclick="verif_submit ()" value="COMMENCER"></a>
+            </form>
+
+
+
+        </div>
+    </div>
+    <h1 id="name" style="margin-top:20px">BISKIT</h1>
+    <div id="Container">
+
+
+
+       
+        
+             <p id="item_text">Cliquez sur Jouer pour commencer la partie</p>
+        <div id="item_img">
+        </div>
+        
+        <img id="paq" onclick="test()" onmouseover="mOver()" onmouseout="mOut()" src="paquet0.png" width="900px"><br>
+        <p id="compteur" ></p>
+  
+    </div>
+    <script rel="text/javascript" src="game.js"></script>
+</body>
+
+</html>
