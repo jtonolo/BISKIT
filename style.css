@@ -1,0 +1,118 @@
+@font-face{
+    font-family: 'natural.ttf';
+    src: url('natural.ttf');
+}
+*{
+    margin:0;
+}
+body{
+    background-image: url(bg_game.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+#Container{
+   
+    width: 80%;
+    margin:auto;
+    background-color:transparent;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    text-align:center;
+   
+    
+}
+
+#item_img{
+    margin-top:50px;
+    background-repeat: no-repeat;
+    width:400px;
+    margin-left:20%;
+  
+    
+    
+  
+}
+
+#item_text{
+    padding:5px;
+    font-size: 1.8em;;
+    font-family: 'natural.ttf' ;
+    color: whitesmoke;
+    width:80%;
+    background-color:#a598986f;
+    border-radius:15px;
+   text-align: center;
+   margin-top:30px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+#compteur{
+    color: rgb(241, 117, 117);
+    font-size: 20px;
+    margin:auto;
+    font-family: 'natural.ttf';
+}
+
+#paq{
+   margin-top:-3%;
+   width: 800px;
+   height: 100%;
+}
+
+#preloader{
+    top:0;
+    padding-top:6%;
+    color: whitesmoke;
+    width: 100%;
+    height:100%;
+    position: fixed;
+    background-image: url(bg_pre.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    z-index:9999;
+}
+
+#pre{
+    font-family: 'natural.ttf';
+    position: relative;
+    padding:15px;
+    text-align: center;
+
+    margin:auto;
+    background-color: #e62b2b6f;
+    border-radius: 15px;
+    
+}
+
+#name{
+    text-align: center;
+    font-size: 3em;
+    color:whitesmoke;
+    font-family:'natural.ttf';
+}
+
+#myform{
+    font-size:1.6em;
+    
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+#sub{
+    margin-top:30px;
+    padding:8px;
+    background-color: transparent;
+    border:solid 1px whitesmoke;
+    border-radius:15px;
+    color:whitesmoke;
+    font-family: 'natural.ttf';
+    font-size:1.8em;
+}
+#sub:hover{
+    font-size:2em;
+    border: solid 3px;
+}

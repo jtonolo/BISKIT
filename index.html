@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>BISKIT</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+
+
+<body>
+    <div id="preloader">
+        <div id="pre">
+            <h1 style="font-size:2em;">BISKIT</h1>
+            <p style="margin-top:20px; font-size:1.8em;">Veillez a ce que tous les verres soient remplis avant de
+                commencer la partie ! L'abus d'alcool est
+                dangereux pour la sante ;)</p>
+            <form id="myform">
+                <label>Joueur 1 : </label>
+                <input type="text" id="p1" name="play1" required><br>
+                <label>Joueur 2 : </label>
+                <input type="text" id="p2" name="play2" required><br>
+                <label>Joueur 3 : </label>
+                <input type="text" id="p3" name="play3"><br>
+                <label>Joueur 4 : </label>
+                <input type="text" id="p4" name="play4"><br>
+                <label>Joueur 5 : </label>
+                <input type="text" id="p5" name="play5"><br>
+                <label>Joueur 6 : </label>
+                <input type="text" id="p6" name="play5"><br>
+                <a onclick="verif_submit ()"> <input type="button" id="sub" onclick="verif_submit ()"
+                        value="COMMENCER"></a>
+            </form>
+
+
+
+        </div>
+    </div>
+    <img src="refresh.png" width="60px;"style="position:fixed" onclick="document.location.reload();">
+    <h1 id="name" style="margin-top:20px; margin-top:30px;">BISKIT</h1>
+    
+
+    <div id="Container">
+        
+        <div id="item_img">
+                
+        </div>
+        <img id="paq" onclick="test()" onmouseover="mOver()" onmouseout="mOut()" src="paquet0.png" width="700px"><br>
+        
+    </div>
+    <p id="compteur" style="margin-left:45%; margin-top:3%;"></p>
+    <p id="item_text">Cliquez sur le paquet de cartes pour commencer la partie</p>
+    <script rel="text/javascript" src="game.js"></script>
+</body>
+
+</html>
