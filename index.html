@@ -19,9 +19,10 @@
 <body>
     <div id="preloader">
         <!--preloader qui recouvre la page tant qu'il n'est pas rempli-->
+       
         <div id="pre">
-            <h1 style="font-size:2em;">BISKIT</h1>
-            <p style="margin-top:20px; font-size:1.8em;">Veillez a ce que tous les verres soient remplis avant de
+            <h1 style="font-size:3em;">BISKIT</h1>
+            <p style="margin-top:20px; font-size:2em;">Veillez a ce que tous les verres soient remplis avant de
                 commencer la partie ! L'abus d'alcool est
                 dangereux pour la sante ;)</p>
             <form id="myform">
@@ -43,14 +44,35 @@
             </form>
         </div>
     </div>
-    <img src="refresh.png" width="60px;" style="position:fixed" onclick="document.location.reload();">
+    <div style="position:fixed; margin-left: 20px;">
+    <img src="img/icons8-synchroniser-26.png" width="60px;"  onclick="document.location.reload();"><br><br> <!--icon pour recommencer la partie -->
+    <img src="img/icons8-règles-filled-50 (1).png" onclick="regle ()" width="60px;"><!--icon pour afficher les regles-->
+    <div id="contain_rules" >
+        <div id="regle">
+            <img src="img/icons8-effacer-26.png" alt="icon effacer" onclick="myfunc ()">
+            <h1 style="text-align:center; margin-bottom:10px;">REGLES</h1>
+            <hr>
+            <ul style="margin-top:20px;">
+                <li>AS : le joueur qui tire la carte bois une gorgee.</li>
+                <li>DE 2 a 6 : le joueur qui tire la carte distribue autant de gorgee que le nombre de la carte.</li>
+                <li>7 : le joueur qui tire la carte a un tour pour dire biskit le dernier qui repete bois 2 gorgee.</li>
+                <li>8 : le joueur qui tire la carte a un tour pour crier "FREEZE" le premier joueur qui bouge bois une gorgee. </li>
+                <li>9 : le joueur qui tire la carte dois énoncer quelque chose qu'il n'a jamais fais ceux qui l'ont deja fais boivent une gorgee. </li>
+                <li>10 : le joueur qui tire la carte dois donner un theme (exemple:"marque de cigarrette") le premier joueur qui repete ou n'a plus d'idée bois une gorgee. </li>
+                <li>VALET : le joueur qui tire la carte a un tour pour poser un doigt sur table le dernier a reproduire bois une gorgee. </li>
+                <li>DAME : le joueur qui tire la carte instaure une nouvelle regle qui sera effective jusqu'a la prochaine dame. </li>
+                <li>ROI : le joueur qui tire la carte a un tour pour effectuer une action stupide le dernier a reproduire bois une gorgee. </li>
+            </ul>
+        </div>
+    </div>
+    </div>  
     <!--bouton permettant de recomencer la partie-->
-    <h1 id="name" style="margin-top:20px; margin-top:30px;">BISKIT</h1>
+    <h1 id="name" style="margin-top:20px;">BISKIT</h1>
     <!--titre qui contiendra plus tard le nom du joueurs dont c'est le tour-->
 
     <div id="Container">
         <div id="item_img"></div><!--div contenant les images en background -->
-        <img id="paq" onclick="test()" onmouseover="mOver()" onmouseout="mOut()" src="paquet0.png" width="700px"><br><!--bouton pour tirer les cartes-->
+        <img id="paq" onclick="test()" onmouseover="mOver()" onmouseout="mOut()" src="img/paquet0.png" width="700px"><br><!--bouton pour tirer les cartes-->
     </div>
     <p id="compteur" style="margin-left:45%; margin-top:3%;"></p><!--paragraphe contenant le decompte du nombre de cartes-->
     <p id="item_text">Cliquez sur le paquet de cartes pour commencer la partie</p><!--paragraphe contenant les règles-->

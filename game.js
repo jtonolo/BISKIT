@@ -58,11 +58,11 @@ function random_card() {
 
 
 function mOver() {
-    document.getElementById("paq").src = "paquet1.png";
+    document.getElementById("paq").src = "img/paquet1.png";
 }
                                                             /*changement d'image sur le over du paquet de carte */
 function mOut() {
-    document.getElementById("paq").src = "paquet0.png";
+    document.getElementById("paq").src = "img/paquet0.png";
 }
 
 
@@ -97,4 +97,12 @@ function test() {
          /*recharge le document lorque la prtie est finie*/
     }
 
+}
+
+function regle (){
+    document.getElementById('contain_rules').style.display = "block";
+}
+
+function myfunc (){
+    document.getElementById('contain_rules').style.display = "none";
 }
